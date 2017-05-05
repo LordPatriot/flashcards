@@ -13,7 +13,7 @@
 ---
 
 ## Processing delay
-Time required to wxamine the packet's header and determine where to direct it
+Time required to examine the packet's header and determine where to direct it
 
 ---
 
@@ -39,4 +39,4 @@ Time required to propagate from one end of the link to another
 ---
 
 ## Propagation delay
-* Speed of propagation is 2-3 * 10^8 meters per second
+* Speed of propagation is 2-3 * 10<sup>8</sup> meters per second
