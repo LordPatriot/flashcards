@@ -40,3 +40,29 @@ Time required to propagate from one end of the link to another
 
 ## Propagation delay
 * Speed of propagation is 2-3 * 10<sup>8</sup> meters per second
+
+---
+
+## Layers
+* Application (HTTP, FTP, SMTP)
+* Transport (TCP, UDP) - transports application layer messages between application endpoints
+* Network (IP) - gets a segment and a destionation address, contains routing protocols
+* Link - facilitates node to node delivery along the route (Ethernet, WiFi etc)
+* Physical - moves individual bits across a physical link
+
+---
+
+* Routers have Network layer
+* Switches don't
+
+---
+
+## TCP
+Breaks down application messages into segments, provides congestion control, establishes connections, guarantees delivery
+
+---
+
+## Types of networks
+
+* curcuit switching (dedicated channel, telephone)
+* packet switching (Internet)
