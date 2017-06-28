@@ -66,3 +66,16 @@ Breaks down application messages into segments, provides congestion control, est
 
 * curcuit switching (dedicated channel, telephone)
 * packet switching (Internet)
+
+---
+
+## Linkerd (layer 5 proxy)
+
+* Layer 5 proxy (HTTP and other protocols - Thrift, Mux, HTTP/2, gRPC)
+* Request/response, not raw TCP packets
+* Linkerd orients itself around concepts of request success/failure, latency (not possible with raw TCP packets)
+* Service discovery (apps move around, proxy points to the correct location)
+* Intelligent load-balancing beyond round robin (based on latency for instance)
+* Can do retries
+* Circuit breakers (stop sending requests to failing node)
+* Metrics/tracing
