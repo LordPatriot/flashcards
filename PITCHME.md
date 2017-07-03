@@ -79,3 +79,36 @@ Breaks down application messages into segments, provides congestion control, est
 * Can do retries
 * Circuit breakers (stop sending requests to failing node)
 * Metrics/tracing
+
+---
+
+## Asymmetric cryptography
+
+* Public key known to everyone - anyone can encrypt messages and send it to you
+* Private key is a secret and belongs to you - only you can decrypt messages using private key
+* Algorithms - RSA, ECC
+
+---
+
+## RSA
+* RSA is based on the difficulty of factoring large integers that are the product of two large prime numbers. Multiplying is easy, the reverse is hard
+* Choose 2 primes - let's say 11 and 13, N = 143
+* Compute totient function - F(N) = F(143) = F(11) * F(13) = 10 * 12 = 120
+* Choose public key, let's say 7.
+
+---
+
+# Distributed systems
+
+---
+
+## Kubernetes
+
+* Master - orchestrates everything
+* Nodes - physical or virtual machines
+* Kubectl - CLI for sending commands to master
+* Deployment - creates & monitors instances of your service (need to specify container image and number of replicas)
+* kubectl proxy will create an endpoint on your localhost to reach services without exposing them externally
+* Pod - one or more app containers + shared resources
+* Pods are fungible (interchangeable)
+* Service - an abstraction which defines a logical set of Pods and a policy by which to access them
