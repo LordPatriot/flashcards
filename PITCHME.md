@@ -69,19 +69,6 @@ Breaks down application messages into segments, provides congestion control, est
 
 ---
 
-## Linkerd (layer 5 proxy)
-
-* Layer 5 proxy (HTTP and other protocols - Thrift, Mux, HTTP/2, gRPC)
-* Request/response, not raw TCP packets
-* Linkerd orients itself around concepts of request success/failure, latency (not possible with raw TCP packets)
-* Service discovery (apps move around, proxy points to the correct location)
-* Intelligent load-balancing beyond round robin (based on latency for instance)
-* Can do retries
-* Circuit breakers (stop sending requests to failing node)
-* Metrics/tracing
-
----
-
 ## Asymmetric cryptography
 
 * Public key known to everyone - anyone can encrypt messages and send it to you
@@ -94,11 +81,37 @@ Breaks down application messages into segments, provides congestion control, est
 * RSA is based on the difficulty of factoring large integers that are the product of two large prime numbers. Multiplying is easy, the reverse is hard
 * Choose 2 primes - let's say 11 and 13, N = 143
 * Compute totient function - F(N) = F(143) = F(11) * F(13) = 10 * 12 = 120
-* Choose public key, let's say 7.
+* Choose public key, let's say 7
+
+---
+
+# Algorithms
+
+---
+
+## Turing completeness
+
+* conditional branching
+* ability to change an arbitrary amount of memory
+
+---
 
 ---
 
 # Distributed systems
+
+---
+
+## Linkerd (layer 5 proxy)
+
+* Layer 5 proxy (HTTP and other protocols - Thrift, Mux, HTTP/2, gRPC)
+* Request/response, not raw TCP packets
+* Linkerd orients itself around concepts of request success/failure, latency (not possible with raw TCP packets)
+* Service discovery (apps move around, proxy points to the correct location)
+* Intelligent load-balancing beyond round robin (based on latency for instance)
+* Can do retries
+* Circuit breakers (stop sending requests to failing node)
+* Metrics/tracing
 
 ---
 
