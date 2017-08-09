@@ -79,9 +79,6 @@ Breaks down application messages into segments, provides congestion control, est
 
 ## RSA
 * RSA is based on the difficulty of factoring large integers that are the product of two large prime numbers. Multiplying is easy, the reverse is hard
-* Choose 2 primes - let's say 11 and 13, N = 143
-* Compute totient function - F(N) = F(143) = F(11) * F(13) = 10 * 12 = 120
-* Choose public key, let's say 7
 
 ---
 
@@ -125,3 +122,6 @@ Breaks down application messages into segments, provides congestion control, est
 * Pod - one or more app containers + shared resources
 * Pods are fungible (interchangeable)
 * Service - an abstraction which defines a logical set of Pods and a policy by which to access them
+* Service is a deployment that can be accessed (either externally or internally)
+* Service routes traffic across a set of Pods
+* Labels - label instances for test/production and version them
