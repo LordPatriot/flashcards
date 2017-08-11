@@ -93,8 +93,6 @@ Breaks down application messages into segments, provides congestion control, est
 
 ---
 
----
-
 # Distributed systems
 
 ---
@@ -125,3 +123,25 @@ Breaks down application messages into segments, provides congestion control, est
 * Service is a deployment that can be accessed (either externally or internally)
 * Service routes traffic across a set of Pods
 * Labels - label instances for test/production and version them
+
+---
+
+# Operating system
+
+---
+
+## Deadlock
+* A situation in which two or more processes are unable to proceed because each is waiting for one the others to do something
+* Check [this blog](http://operatingsystemgeeks.blogspot.nl/) for an example
+
+---
+
+## Livelock
+A situation in which two or more processes continuously change their states in response to changes in the other process(es) without doing any useful work
+
+---
+
+## Starvation
+A situation in which a runnable process is overlooked indefinitely by the scheduler; although it is able to proceed, it is never chosen
+
+---
